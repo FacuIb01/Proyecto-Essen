@@ -179,7 +179,8 @@ border-top-right-radius: 40px;
 }
 
 .carrusel {
-  height: 63.47rem;
+  margin: 3rem 0;
+  height: fit-content;
   width: 100%;
   text-align: center;
   background-image: url(/Imagenes/composición\ background\ reviews\ desktop.png);
@@ -190,6 +191,9 @@ border-top-right-radius: 40px;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+}
+.carrusel img{
+  width: 100%;
 }
 
 /******************************************/
