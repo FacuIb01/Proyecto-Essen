@@ -1,36 +1,128 @@
 .HeroSection{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     align-content: center;
+    .navskere{
+        width: 100%;
+        height:0rem;
+        .navMostrado{
+            margin-top: 1rem;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            .ulMostrado{
+                .padingLinkUno{
+                    width: 15rem;
+                    height: fit-content;
+                }
+                .padingLinkDos{
+                    width: 10rem;
+                    height: fit-content;
+                }
+                .padingLinkTres{
+                    height: fit-content;
+                    width: 10rem;
+                    margin-right: 5rem;
+                }
+                li{
+                background-color: white;
+                font-family: 'Open Sans', sans-serif;;
+                opacity: 1;
+                text-align: center;
+                margin-left: 6rem;
+                box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.32);
+                background-color:white ;
+                border-radius: 1rem;
+                a{
+                    font-size: 16px;
+                }
+                .colorOrange{
+                    text-decoration: none;
+                    color: #FFA347;
+                    &:hover{
+                        color: #FFA347;
+                    }
+                    }
+                }
+            }
+        }
+    }
+    .heroSection2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     .LlamadoALaAccionText{
         margin-left: 3rem;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        align-items: flex-start;
-        text-align: left;
+        align-items: flex-start; 
         padding: 2rem;
-        height: 25rem;
-        width: 37rem;
+        height: fit-content;
+        width: 40rem;
         button{
+            color: white;
+            font-family: 'Open Sans', sans-serif;
             width: 15rem;
             height: 4rem;
             border-radius: 1rem;
-            border: none;
+            border: orange 2px solid;
             background-color: orange;
+            transition: all .5s ease;
+            object-fit: cover;
+            &:hover{
+                border: orange 2px solid;
+                background-color: white;
+                color: orange;
+            }
+            a{
+                color: white; 
+                text-decoration: none;
+            &:hover{
+                color: #FFA347;
+            }
+            }
+            
         }
     }
     .ImageLlamadaALaAccion{
-        margin-right: 10rem;
+        margin-right: 5rem;
         border-radius: .8rem;
-        height: 30rem;
-        width: 30rem;
-        background-color: blue;
+        height: fit-content;
+        width: fit-content;
+        object-fit: fill;
+        z-index: -1;
+        .imgDesktop{
+            height: 41rem;
+        }
+        .imgMobile{
+            display: none;
+        }
+    }
+    .fondoRosa{
+        z-index: -2;
+        position: absolute;
+        right: 0;
+        background-color:  #F2DEE9;;
+        height: 100%;
+        width: 27%;
+        justify-self: center;
+        align-self: center;
+    }
     }
 }

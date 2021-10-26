@@ -1,4 +1,5 @@
 .productos{
+    padding: 3rem;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -15,40 +16,54 @@
         align-items: center;
         align-content: center;
     .productosP{
+        text-align: center;
         padding: 2rem;
         height: 0px;
         }
     }
     .productosImagenes{
-        margin-top: 5rem;
         width: 100%;
         height: 35rem;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
         align-items: center;
         align-content: center;
-        .contenedorProducto{
-            width: 23rem;
-            height: 25rem;
-            background-color: black;
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 70% 30%;
-            grid-template-areas: "img", "texto";
-            box-shadow: 5px 5px 10px grey;
-            .contenedorImg{
-                grid-area: "img";
+        a{
+            text-decoration: none;
+            transition: all .5s ease;
+            .contenedorProducto{
+                width: 18rem;
+                height: 23rem;
                 background-color: black;
-                border-top-left-radius: 40px;
-                border-top-right-radius: 40px;
-            }
-            .contenedorTxt{
-                grid-area: "texto";
-                background-color: hotpink;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 70% 30%;
+                grid-template-areas: "img", "texto";
+                box-shadow: 5px 5px 10px grey;
+                transition: all .5s ease;
+                &:hover{
+                    transform:translateY(-10px);
+                }
+                .contenedorImg{
+                    overflow: hidden;
+                    grid-area: "img";
+                    border-top-left-radius: 40px;
+                    border-top-right-radius: 40px;
+                    object-fit: cover;
+                }
+                .contenedorTxt{
+                    grid-area: "texto";
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                }
             }
         }
     }

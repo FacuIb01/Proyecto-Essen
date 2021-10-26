@@ -1,27 +1,55 @@
 @import "herosection";
 @import "productos";
+@import "header";
+@import "aqua";
+@import "marsellaComple";
+@import "celular";
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     h3{
-        font-size: 16px;
+        color: #FFA347;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     }
     h1{
-        font-size: 40px;
+        color: #FFA347;
+        font-size: 48px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     }
     h2{
-        font-size: 22px;
+        color: #FFA347;
+        font-size: 36px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
     }
     p{
-        font-size: 16px;
+        font-size: 22px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .naranjaP{
+        color: #FFA347;
+    }
+
+    .colorRosa{
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+        color: #E2B6CE;
+        &:hover{
+            color: #E2B6CE;
+        }
     }
 }
 
 header{
     width: 100%;
     height: 3.5rem;
+    opacity: .5;
 }
 
 

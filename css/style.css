@@ -1,37 +1,111 @@
 .HeroSection {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
   align-content: center; }
-  .HeroSection .LlamadoALaAccionText {
-    margin-left: 3rem;
+  .HeroSection .navskere {
+    width: 100%;
+    height: 0rem; }
+    .HeroSection .navskere .navMostrado {
+      margin-top: 1rem;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem; }
+      .HeroSection .navskere .navMostrado .ulMostrado .padingLinkUno {
+        width: 15rem;
+        height: fit-content; }
+      .HeroSection .navskere .navMostrado .ulMostrado .padingLinkDos {
+        width: 10rem;
+        height: fit-content; }
+      .HeroSection .navskere .navMostrado .ulMostrado .padingLinkTres {
+        height: fit-content;
+        width: 10rem;
+        margin-right: 5rem; }
+      .HeroSection .navskere .navMostrado .ulMostrado li {
+        background-color: white;
+        font-family: 'Open Sans', sans-serif;
+        opacity: 1;
+        text-align: center;
+        margin-left: 6rem;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.32);
+        background-color: white;
+        border-radius: 1rem; }
+        .HeroSection .navskere .navMostrado .ulMostrado li a {
+          font-size: 16px; }
+        .HeroSection .navskere .navMostrado .ulMostrado li .colorOrange {
+          text-decoration: none;
+          color: #FFA347; }
+          .HeroSection .navskere .navMostrado .ulMostrado li .colorOrange:hover {
+            color: #FFA347; }
+  .HeroSection .heroSection2 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    text-align: left;
-    padding: 2rem;
-    height: 25rem;
-    width: 37rem; }
-    .HeroSection .LlamadoALaAccionText button {
-      width: 15rem;
-      height: 4rem;
-      border-radius: 1rem;
-      border: none;
-      background-color: orange; }
-  .HeroSection .ImageLlamadaALaAccion {
-    margin-right: 10rem;
-    border-radius: .8rem;
-    height: 30rem;
-    width: 30rem;
-    background-color: blue; }
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .HeroSection .heroSection2 .LlamadoALaAccionText {
+      margin-left: 3rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 2rem;
+      height: fit-content;
+      width: 40rem; }
+      .HeroSection .heroSection2 .LlamadoALaAccionText button {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        width: 15rem;
+        height: 4rem;
+        border-radius: 1rem;
+        border: orange 2px solid;
+        background-color: orange;
+        transition: all .5s ease;
+        object-fit: cover; }
+        .HeroSection .heroSection2 .LlamadoALaAccionText button:hover {
+          border: orange 2px solid;
+          background-color: white;
+          color: orange; }
+        .HeroSection .heroSection2 .LlamadoALaAccionText button a {
+          color: white;
+          text-decoration: none; }
+          .HeroSection .heroSection2 .LlamadoALaAccionText button a:hover {
+            color: #FFA347; }
+    .HeroSection .heroSection2 .ImageLlamadaALaAccion {
+      margin-right: 5rem;
+      border-radius: .8rem;
+      height: fit-content;
+      width: fit-content;
+      object-fit: fill;
+      z-index: -1; }
+      .HeroSection .heroSection2 .ImageLlamadaALaAccion .imgDesktop {
+        height: 41rem; }
+      .HeroSection .heroSection2 .ImageLlamadaALaAccion .imgMobile {
+        display: none; }
+    .HeroSection .heroSection2 .fondoRosa {
+      z-index: -2;
+      position: absolute;
+      right: 0;
+      background-color: #F2DEE9;
+      height: 100%;
+      width: 27%;
+      justify-self: center;
+      align-self: center; }
 
 .productos {
+  padding: 3rem;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -48,51 +122,447 @@
     align-items: center;
     align-content: center; }
     .productos .textoProductos .productosP {
+      text-align: center;
       padding: 2rem;
       height: 0px; }
   .productos .productosImagenes {
-    margin-top: 5rem;
     width: 100%;
     height: 35rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
     align-content: center; }
-    .productos .productosImagenes .contenedorProducto {
-      width: 23rem;
-      height: 25rem;
-      background-color: black;
+    .productos .productosImagenes a {
+      text-decoration: none;
+      transition: all .5s ease; }
+      .productos .productosImagenes a .contenedorProducto {
+        width: 18rem;
+        height: 23rem;
+        background-color: black;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 30%;
+        grid-template-areas: "img", "texto";
+        box-shadow: 5px 5px 10px grey;
+        transition: all .5s ease; }
+        .productos .productosImagenes a .contenedorProducto:hover {
+          transform: translateY(-10px); }
+        .productos .productosImagenes a .contenedorProducto .contenedorImg {
+          overflow: hidden;
+          grid-area: "img";
+          border-top-left-radius: 40px;
+          border-top-right-radius: 40px;
+          object-fit: cover; }
+        .productos .productosImagenes a .contenedorProducto .contenedorTxt {
+          grid-area: "texto";
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          background-color: white; }
+
+header {
+  display: none; }
+
+.tituloAquaTerra {
+  display: block;
+  opacity: 1;
+  text-align: center; }
+
+.aquaTerraProductos {
+  padding: 1rem 2rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .aquaTerraProductos .contenedorProducto {
+    margin: 1rem 2rem;
+    width: 18rem;
+    height: 20rem;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "img", "texto";
+    box-shadow: 0px 5px 12px grey;
+    transition: all .5s ease; }
+    .aquaTerraProductos .contenedorProducto:hover {
+      transform: translateY(-10px); }
+    .aquaTerraProductos .contenedorProducto .contenedorImg {
+      overflow: hidden;
+      grid-area: "img";
       border-top-left-radius: 40px;
       border-top-right-radius: 40px;
+      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .aquaTerraProductos .contenedorProducto .contenedorImg .imgProducto {
+        width: 15rem; }
+    .aquaTerraProductos .contenedorProducto .contenedorTxt {
+      grid-area: "texto";
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: white; }
+
+.tituloMarselaComple {
+  display: block;
+  opacity: 1;
+  text-align: center; }
+
+.marselaCompleProductos {
+  padding: 1rem 2rem;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start; }
+  .marselaCompleProductos .contenedorProducto {
+    margin: 1rem 2rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "img", "texto";
+    box-shadow: 0px 5px 12px grey;
+    transition: all .5s ease; }
+    .marselaCompleProductos .contenedorProducto:hover {
+      transform: translateY(-10px); }
+    .marselaCompleProductos .contenedorProducto .contenedorImg {
+      overflow: hidden;
+      grid-area: "img";
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .marselaCompleProductos .contenedorProducto .contenedorImg .imgProducto {
+        width: 15rem; }
+    .marselaCompleProductos .contenedorProducto .contenedorTxt {
+      grid-area: "texto";
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: white; }
+
+@media only screen and (max-width: 768px) {
+  .colorRosa {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: #F2DE !important; }
+  .HeroSection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
+    .HeroSection .navskere {
+      display: none; }
+    .HeroSection .heroSection2 {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+      .HeroSection .heroSection2 .LlamadoALaAccionText {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+        .HeroSection .heroSection2 .LlamadoALaAccionText h1 {
+          font-size: 22px; }
+        .HeroSection .heroSection2 .LlamadoALaAccionText p {
+          font-size: 13px; }
+        .HeroSection .heroSection2 .LlamadoALaAccionText button {
+          font-size: 16px;
+          width: 10rem;
+          height: 3rem; }
+          .HeroSection .heroSection2 .LlamadoALaAccionText button:hover {
+            border: orange 2px solid;
+            background-color: white;
+            color: orange; }
+      .HeroSection .heroSection2 .ImageLlamadaALaAccion {
+        margin: 0;
+        border-radius: .8rem;
+        height: fit-content;
+        width: fit-content;
+        object-fit: fill;
+        z-index: -1; }
+        .HeroSection .heroSection2 .ImageLlamadaALaAccion .imgMobile {
+          display: block;
+          height: 20rem; }
+        .HeroSection .heroSection2 .ImageLlamadaALaAccion img {
+          display: none; }
+      .HeroSection .heroSection2 .fondoRosa {
+        display: none; }
+  .productos {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .productos .textoProductos {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      height: fit-content; }
+      .productos .textoProductos h2 {
+        font-size: 16px; }
+      .productos .textoProductos .productosP {
+        padding: 0;
+        text-align: start;
+        height: fit-content;
+        margin: 0; }
+        .productos .textoProductos .productosP p {
+          font-size: 12px;
+          padding: 0; }
+    .productos .productosImagenes {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      padding: 0 2rem;
+      height: fit-content; }
+      .productos .productosImagenes a .contenedorProducto {
+        margin-bottom: 1.5rem;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 25px;
+        width: 10rem;
+        height: 13.5rem; }
+        .productos .productosImagenes a .contenedorProducto .contenedorImg {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px; }
+          .productos .productosImagenes a .contenedorProducto .contenedorImg img {
+            width: 10rem; }
+        .productos .productosImagenes a .contenedorProducto .contenedorTxt p {
+          font-size: 16px;
+          margin: 0; }
+  header {
+    display: block; }
+    header nav div ul {
+      z-index: 1; }
+      header nav div ul li .colorOrange {
+        color: orange !important; }
+  .tituloAquaTerra {
+    margin: 1rem 0;
+    height: fit-content;
+    opacity: 1; }
+    .tituloAquaTerra h1 {
+      text-align: center;
+      font-size: 22px; }
+  .aquaTerraProductos {
+    padding: 0;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    .aquaTerraProductos .contenedorProducto {
+      padding: 0rem;
+      margin: .5rem 0rem;
+      width: 10rem;
+      height: 10rem;
+      background-color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 70% 30%;
       grid-template-areas: "img", "texto";
-      box-shadow: 5px 5px 10px grey; }
-      .productos .productosImagenes .contenedorProducto .contenedorImg {
+      box-shadow: 0px 5px 15px grey;
+      transition: all .5s ease; }
+      .aquaTerraProductos .contenedorProducto .contenedorImg {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
         grid-area: "img";
-        background-color: black;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px; }
-      .productos .productosImagenes .contenedorProducto .contenedorTxt {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; }
+        .aquaTerraProductos .contenedorProducto .contenedorImg .imgProducto {
+          width: 10rem; }
+      .aquaTerraProductos .contenedorProducto .contenedorTxt {
         grid-area: "texto";
-        background-color: hotpink; }
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: white; }
+        .aquaTerraProductos .contenedorProducto .contenedorTxt p {
+          font-size: 16px; }
+  .marselaCompleProductos {
+    padding: 1rem 0rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start; }
+    .marselaCompleProductos .contenedorProducto {
+      padding: 0rem;
+      margin: .5rem .5rem;
+      width: 10rem;
+      height: 10rem;
+      background-color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 70% 30%;
+      grid-template-areas: "img", "texto";
+      box-shadow: 0px 5px 15px grey;
+      transition: all .5s ease; }
+      .marselaCompleProductos .contenedorProducto .contenedorImg {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        grid-area: "img";
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; }
+        .marselaCompleProductos .contenedorProducto .contenedorImg .imgProducto {
+          width: 9rem; }
+      .marselaCompleProductos .contenedorProducto .contenedorTxt {
+        grid-area: "texto";
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-color: white; }
+        .marselaCompleProductos .contenedorProducto .contenedorTxt p {
+          font-size: 16px; } }
 
+/*    .productosImagenes{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 0rem 1rem;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .marginBottom{
+            margin-bottom: 3rem;
+        }
+        a{
+            width: 160px;
+            height: 216px;
+            margin-top: 2rem;
+            transition: all .5s ease;
+            .contenedorProducto{
+                background-color: white;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 25px;
+                width: 160px;
+                height: 216px;
+                border
+                &:hover{
+                    transform:translateY(-10px);
+                }
+                .contenedorImg{
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    img{
+
+                        width: 10rem;
+                    }
+                }
+                .contenedorTxt{
+                    p{
+                        font-size: 16px;
+                        margin: 0;
+                    }
+                }
+
+            }
+        }*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
   * h3 {
-    font-size: 16px; }
+    color: #FFA347;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; }
   * h1 {
-    font-size: 40px; }
+    color: #FFA347;
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; }
   * h2 {
-    font-size: 22px; }
+    color: #FFA347;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold; }
   * p {
-    font-size: 16px; }
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif; }
+  * .naranjaP {
+    color: #FFA347; }
+  * .colorRosa {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    color: #E2B6CE; }
+    * .colorRosa:hover {
+      color: #E2B6CE; }
 
 header {
   width: 100%;
-  height: 3.5rem; }
+  height: 3.5rem;
+  opacity: .5; }
